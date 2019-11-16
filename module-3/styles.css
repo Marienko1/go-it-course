@@ -14,7 +14,7 @@ img {
     height: auto;
 }
 
-.container {
+.page {
     width: 900px;
     margin: 0 auto;
 }
@@ -71,7 +71,6 @@ main {
 .features_list-item {
     display: inline-block;
     width: 420px;
-    height: 476px;
     margin-right: 60px;
     margin-bottom: 136px;
     margin-top: 0;
