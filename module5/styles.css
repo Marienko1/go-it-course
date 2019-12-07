@@ -1,0 +1,368 @@
+html{
+	box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+
+body {
+    color:  #555252;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;    
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active)
+ {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+
+.slider-text-p {    
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 82px; 
+    text-align: left;
+}
+
+h2 {
+    margin: 0 auto 76px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.basket img {
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px;    
+}
+
+.menu-wrapper {
+    padding-top: 32px;
+    padding-bottom: 26px;
+}
+
+.nav-menu {
+    margin: 0;
+    float: right;
+}
+
+.nav-menu li {
+    float: left;
+    right:50%;
+}
+
+.item a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    display: block;
+    padding: 5px 16px;
+    color:  #555252;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.item a:hover,
+.item a:focus {
+    color:  #1abc9c;
+    transition: 0.3s;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 34px;
+    display: inline-block;
+    color:  #555252;
+}
+
+.logo:first-letter {
+    color:  #1abc9c;
+}
+
+.features {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-color: #e9f0fd;
+}
+
+.first-title::after{
+    margin: 18px auto 0;
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color:  #4ec6ab;
+    content: "";
+}
+
+.features-list-item {
+    width: 255px;
+    height: 322px;
+    float: left;
+    position: relative;
+}
+
+.features-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.features-list-item:nth-last-of-type(n+5) {
+    margin-bottom: 30px;
+}
+
+.features-list-descr {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
+.features-list-name,
+.features-list-price {
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    color:#fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 600;   
+}
+
+.features-list-name{
+    width: 200px;
+    background-color: #323232;
+    padding-left:14px;
+    padding-right:14px;
+}
+
+.features-list-price{
+    width:55px;
+    background-color: #8c8c8c;
+    text-align: center;
+}
+
+.features-list li:hover .features-list-name,
+.slider-l:hover,
+.slider-l:focus,
+.slider-r:hover,
+.slider-r:focus {
+    opacity: 1;
+    background-color: #1abc9c;
+    transition: 0.3s;
+}
+
+.features-list li:hover .features-list-price{
+    background-color: #7fd9c7;
+    transition: 0.3s;
+}
+
+.features-list li:hover .wrapper-icons,
+.features-list li:hover .list-icons {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.features-list-item{
+    cursor:pointer;
+}
+
+.slider-title {
+    position: relative;
+    height: 600px;
+}
+
+.slider-text {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slider-text-p1 {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 54px;
+}
+
+.slider-l, .slider-r {
+    position:absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    display:block;
+    width:104px;
+    height:104px;
+    cursor:pointer;
+    opacity: 0.5;
+    border: none; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-l {
+    left: 15px;
+    background:url(img/pre.png) #4ec6ab 50% no-repeat;
+}
+
+.slider-r {
+    right: 15px;
+    background:url(img/next.png) #4ec6ab 50% no-repeat;
+}
+
+.wrapper-icons {
+    z-index: 1;
+    width: 255px;
+    height: 284px;
+    background-color: rgba(0,0,0,0.5);
+    border: 10px solid rgba(255, 255, 255, 0.678);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.list-icons {
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.list-icons a {
+    display: block;
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff; 
+    background-repeat: no-repeat;
+}
+
+.list-icons li:not(:nth-child(3n+4)) {
+    margin-right:10px;
+    margin-bottom: 8px;
+}
+.list-icons li:nth-child(n+3) {
+    margin-right: 0;
+}
+
+.list-icons a:hover,
+.list-icons a:focus,
+.basket:hover,
+.basket:focus {
+    background-color:  #4ec6ab;    
+    transition: 0.3s;
+}
+
+.icon-heart {
+    background-image: url(img/heart.png);
+    background-position: center;
+}
+
+.icon-arrows {
+    background-image: url(img/arrows.png);
+    background-position: center;
+}
+
+.icon-clock {
+    background-image: url(img/clock.png);
+    background-position: center;
+}
+
+.list-icons li {
+    float:left;
+}
+
+.basket     {
+    border: 1px solid #fff;
+    margin: 0;
+    padding: 0;
+    min-width: 164px;
+    height: 48px;
+    background-color: #323232;
+    color: #fff;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor:pointer;
+    display: block;
+    background: url(img/basket.png) no-repeat 15% 50%, url(img/add_to_cart.png) no-repeat 75% 50%;
+}
+
+.slider {
+    height: 600px;
+    width: 100%;
+    background: url(img/slide4.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer-wrapper {
+    background-color: #323232;
+    position: relative;
+}
+
+.footer-text {
+    margin: 0;
+    text-align: center;
+    padding: 36px 0;
+}
+
+.footer-text a {
+    color:  #1abc9c;
+    display: inline-block;
+    text-decoration: none;
+}
