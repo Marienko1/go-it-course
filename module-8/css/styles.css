@@ -1,0 +1,345 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sheet,
+.sheet-link{
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 3px solid #ff4e50;
+    border-radius: 3rem;
+    display: block;
+    width: 28rem;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.sheet:hover,
+.sheet-link:hover{
+    background-color: #ff4e50;
+}
+
+/*HEADER*/
+
+header {
+    background: url("../img/bg.png"), rgba(0, 0, 0, 0.6) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-bottom: 14rem;
+    color: #ffffff;
+}
+
+.wrapper {
+    width: 32rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.site-navigation-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 11rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.site-navigation-links li {
+    display: inline-block;
+}
+.site-navigation-links a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 3px transparent solid;
+    border-radius: 2rem;
+    padding: 0.8rem 1.4rem;
+}
+.site-navigation-links a:hover{
+    border: 3px #ffffff solid;
+    transition-duration: 0.2s;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    display: block;
+}
+
+.friends {
+    max-width: 33rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.friends h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.friends p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 88%;
+}
+
+/*MAIN*/
+
+main {
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+main .sheet {
+    color: #ff4e50;
+}
+
+main .sheet:hover {
+    color: #ffffff;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.list-partners {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+
+.list-partners li:last-child {
+    margin-bottom: 0;
+}
+
+.photo {
+    margin-bottom: 2rem;
+}
+
+.list-partners .name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-bottom: 1.8rem;
+}
+
+.list-partners p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #666666;
+    margin: 0 auto;
+    width: 22rem;
+}
+.photo{
+    position: relative;
+    max-width: 12.5rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.photo::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    border: 3px #fff solid;
+    border-radius: 4rem;
+    right: 0.3rem;
+    top: 9rem;
+}
+.list-item {
+    text-align: center;
+}
+.item1::after {
+    background: url(../img/icons/i1.png) no-repeat 45% 45%;
+    background-color: #ff4e50;
+}
+.item2::after {
+    background: url(../img/icons/i2.png) no-repeat 45% 45%;
+    background-color: #ffa507;
+}
+.item3::after {
+    background: url(../img/icons/i3.png) no-repeat 45% 35%;
+    background-color: #1cd7ad;
+}
+.item4::after {
+    background: url(../img/icons/i4.png) no-repeat 30% 50%;
+    background-color: #4e73db;
+}
+@media (min-width: 320px) and  (max-width: 939px){
+    .list-partners li {
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 768px) {
+
+    .site-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-navigation-links, .logo {
+        margin-bottom: 0;
+    }
+
+    .friends p {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+
+    header {
+        padding-bottom: 23.7rem;
+    }
+
+    header .sheet {
+        width: 23rem;
+    }
+
+    header .wrapper {
+        width: 66rem;
+        margin-bottom: 13rem;
+    }
+
+    main {
+        padding-bottom: 4rem;
+    }
+
+    main .wrapper {
+        width: 66rem;
+    }
+
+    main .sheet {
+        width: 19.2rem;
+    }
+
+    main h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .list-partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .list-partners li {
+        flex-basis: 49%;
+    }
+
+    .list-partners li:nth-last-child(odd) {
+        margin-bottom: 0;
+    }
+
+    .list-partners p {
+        width: 97%;
+    }
+
+    .list-item3 {
+        order: 2;
+    }
+
+    .list-item2 {
+        order: 3;
+    }
+
+    .list-item4 {
+        order: 4;
+    }
+
+    .friends {
+        max-width: 43.4rem;
+    }
+
+    .friends h2 {
+        font-size: 4.1rem;
+        margin-bottom: 4rem;
+    }
+
+    .friens h3 {
+        font-size: 2.4rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (min-width: 940px) {
+
+    header .wrapper,
+    main .wrapper {
+        width: 92rem;
+    }
+
+    .friends {
+        max-width: 45rem;
+    }
+
+    .list-partners li {
+        flex-basis: 24%;
+    }
+   
+     .list-partners {
+        margin-bottom: 3rem;
+    }
+
+
+    .list-partners p {
+        width: 100%;
+    }
+
+}
