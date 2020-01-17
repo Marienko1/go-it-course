@@ -1,0 +1,34 @@
+/*-------------------- breakpoint 960px ---------------------- */
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  
+    .logo {
+      padding-left: 10px;
+    }
+  
+    .partners {
+      padding-top: 67px;
+    }
+    .partners__name {
+      margin-top: 19px;
+    }
+  
+    .partners__item:nth-child(3) .partners__name {
+      margin-top: 20px;
+    }
+  
+    .partners__item:nth-child(4n) {
+      margin-bottom: 0;
+    }
+  
+    .partners__list {
+      margin-bottom: 13px;
+    }
+  
+    .partners {
+      padding-bottom: 70px;
+    }
+  }
+  /*-------------------- breakpoint 960px END------------------- */

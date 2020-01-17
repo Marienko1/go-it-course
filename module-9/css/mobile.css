@@ -1,0 +1,266 @@
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #666666;
+  }
+  
+  .btn:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  .btn {
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .title {
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  
+  /*------------------------ Header---------------- */
+  .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 0;
+  }
+  
+  .logo__link,
+  .logo__link:hover,
+  .logo__link:active,
+  .logo__link:focus,
+  .logo__link:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav__list {
+    margin-bottom: 0;
+  }
+  
+  .btn--nav {
+    padding: 8px 15px 7px 16px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #fff;
+    letter-spacing: -0.04em;
+  }
+  
+  .btn--nav::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .btn--nav:hover {
+    border: 2px solid #fff;
+  }
+  /*----------------------- Header END--------------------- */
+  
+  /*----------------- section greeting----------------- */
+  .greeting {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .greeting::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1a1915;
+    z-index: -2;
+  }
+  
+  .title--greeting {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.027em;
+  }
+  
+  .greeting__desc {
+    margin-top: 9px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .btn--greeting {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    background-color: #ff4e50;
+    border: none;
+    color: #fff;
+    letter-spacing: -0.025em;
+  }
+  /*----------------- section greeting END------------- */
+  
+  /*--------------------- section partners ------------------*/
+  .title--partners {
+    padding-right: 7px;
+    font-size: 22px;
+    color: #333333;
+    letter-spacing: -0.016em;
+  }
+  
+  .partners__list {
+    margin-bottom: 0;
+  }
+  
+  .partners__avatar {
+    position: relative;
+    width: 121px;
+    margin: 0 auto;
+  }
+  
+  .partners__avatar::after {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    content: "";
+    width: 41px;
+    height: 41px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .partners__avatar--tv::after {
+    background-color: #ff4e50;
+    background-image: url(../img/icons/i1.png);
+    background-size: 16px 16px;
+  }
+  
+  .partners__avatar--coffee::after {
+    background-color: #1cd7ad;
+    background-image: url(../img/icons/i3.png);
+    background-size: 16px 17px;
+  }
+  
+  .partners__avatar--chemistry::after {
+    background-color: #ffa507;
+    background-image: url(../img/icons/i2.png);
+    background-size: 13px 17px;
+  }
+  
+  .partners__avatar--plane::after {
+    background-color: #4e73db;
+    background-image: url(../img/icons/i4.png);
+    background-size: 17px 16px;
+  }
+  
+  .partners__name {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+  
+  .partners__desc {
+    margin: 16px 0 0;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+  
+  .partners__item:nth-child(even) *:not(img) {
+    padding-right: 2px;
+  }
+  
+  .btn--see-more {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    letter-spacing: -0.019em;
+  }
+  /*--------------------- section partners END------------------*/
+  
+  /*                        @MEDIA QUERIES                     */
+  /*-------------------- breakpoint 320px ------------------- */
+  @media (max-width: 767px) {
+    .container {
+      width: 320px;
+    }
+  
+    .nav__list {
+      padding: 20px 25px 115px 2px;
+    }
+  
+    .greeting {
+      padding: 191px 0 139px;
+      background-image: url("../img/greeting_bgi/bgi-tablet.png");
+    }
+  
+    .title--greeting {
+      margin-top: 33px;
+    }
+  
+    .greeting__desc {
+      padding: 0 50px 0;
+    }
+  
+    .btn--greeting {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .partners {
+      padding-top: 66px;
+      padding-bottom: 56px;
+    }
+  
+    .partners__list {
+      padding-top: 14px;
+    }
+  
+  
+    .partners__item:not(:nth-child(3)) {
+      margin-bottom: 26px;
+    }
+  
+    .partners__item:nth-child(3) {
+      padding-right: 17px;
+      margin-bottom: 27px;
+    }
+  
+    .partners__item:nth-child(even) {
+      padding-right: 20px;
+    }
+  
+    .partners__item:nth-child(3) .partners__desc {
+      padding: 0 8px;
+    }
+  
+    .btn--see-more {
+      padding-left: 70px;
+      padding-right: 73px;
+    }
+  }
+  /*-------------------- breakpoint 320px END------------------- */

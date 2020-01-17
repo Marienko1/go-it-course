@@ -1,0 +1,74 @@
+/*-------------------- breakpoint 768px ------------------- */
+@media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  
+    .header {
+      padding-top: 38px;
+      padding-bottom: 152px;
+    }
+  
+    .logo {
+      padding-top: 4px;
+    }
+  
+    .greeting {
+      padding: 214px 0 235px;
+      background-image: url("../img/greeting_bgi/bgi_desktop.png");
+    }
+  
+    .title--greeting {
+      font-size: 52px;
+      letter-spacing: -0.025em;
+    }
+  
+    .greeting__desc {
+      margin: 27px auto 33px;
+      padding: 0 20px 0 17px;
+      font-size: 24px;
+    }
+  
+    .btn--greeting {
+      padding-left: 23px;
+      padding-right: 27px;
+    }
+  
+    .partners {
+      padding-top: 69px;
+      padding-bottom: 40px;
+    }
+  
+    .partners__list {
+      margin-top: 31px;
+      margin-bottom: 38px;
+    }
+  
+    .partners__item:nth-child(3) .partners__desc {
+      padding: 0 3px 0 2px;
+    }
+  
+    .btn--see-more {
+      padding-left: 27px;
+      padding-right: 29px;
+    }
+  
+    .first,
+    .second {
+      margin-bottom: 56px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 959px) {
+    
+    .title--greeting {
+      padding-right: 15px;
+    }
+  
+    .header {
+      padding-right: 17px;
+      padding-left: 33px;
+    }
+  
+  }
+  /*-------------------- breakpoint 768px END------------------- */
